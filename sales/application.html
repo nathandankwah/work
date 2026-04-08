@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apply for Service</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="php" href="submit.php">
+<link rel="script" href="scr">
+
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Service Application</h2>
+
+<form action="submit.php" method="POST" class="form">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email">
+
+<input type="text" name="phone" placeholder="Phone Number">
+
+<select name="service">
+<option>Savings Account</option>
+<option>Loan</option>
+<option>Credit Card</option>
+</select>
+
+<textarea name="message" placeholder="Message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

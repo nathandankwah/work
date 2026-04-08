@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDC BANK. - We Simply Make Your Dream a Reality</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    </head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <i class=""></i> EDC
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+                
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+    <nav>     
+<a href="home.html"><button>Home</button></a>
+<a href="product.html"><button>Products</button></a>
+<a href="apply.html"><button>Apply</button></a>
+<a href="contact.html"><button>Contact</button></a>
+</nav>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content fade-in-up">
+            <h1>We Simply Make Your Dream a Reality</h1>
+            <p>Professional Banking Service Across Ghana</p>
+            <a href="product.html" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner show" id="cookieBanner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <p class="mb-0">We use basic analytics to improve your experience.</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <button class="btn btn-outline-light me-2" onclick="learnMore()">Learn More</button>
+                    <button class="btn btn-primary" onclick="acceptCookies()">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <!-- Team Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Our Team</h3>
+                </div>
+                <div class="col-md-4 col-lg-3 fade-in-up">
+                    <div class="team-card">
+                            <img src="" alt="">
+                        <h5>GEORGE TETTEY</h5>
+                        <p>IT OFFICER</p>
+                    </div>
+                </div>
+              
+                <div class="col-md-4 col-lg-3 fade-in-up">
+                    <div class="team-card">
+                        <img src="/pics/ewan-buck-13vSUuXFnwA-unsplash.jpg" alt="">
+                        <h5>NATHAN DANKWAH</h5>
+                        <p>IT INTERN</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our construction services</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            How do I request a quote?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            Reach out to us via email at info@anyconstructiongh.com or call us at 0550566667.
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            What areas do you operate in?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            We operate nationwide across Ghana, serving all regions with our construction services.
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Do you handle both residential and commercial projects?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            YES, we handle both commercial and residential projects with equal expertise and professionalism.
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            What is your typical project timeline?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            Each project has a unique timeline based on its complexity and requirements. However, we work day and night shifts to facilitate the timely completion of projects.
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Do you offer defect liability?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            YES, we have a Defect Liability period as part of our construction services. During this time, we take full responsibility for fixing any defects related to our workmanship or materials at no extra cost.
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Do you offer maintenance and renovations?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            YES, we offer comprehensive maintenance services to keep your property in top condition.
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <p>For further inquiries, kindly reach us via:</p>
+                        <a href="mailto:info@anyconstructiongh.com" class="btn btn-outline-primary me-2">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://wa.me/233550566667" class="btn btn-outline-success">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-bg">
+        <div class="container">
+            <div class="section-title fade-in-up">
+                <h2 style="color: white;">Contact Us</h2>
+                <p style="color: #bdc3c7;">Get in touch for your next construction project</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 fade-in-up">
+                    <div class="contact-info">
+                        <h4><i class="fas fa-map-marker-alt"></i> Our Location</h4>
+                        <p>No. 22 Morroco Lane, Ridge<br>
+                        400m from National Theatre,Opp. Efua Sutherland Park </p>
+                        
+                        <h4><i class="fas fa-phone"></i> Phone Numbers</h4>
+                        <p>Tel: 0204081704<br>
+                        Mobile: 0257455078</p>
+                        
+                        <h4><i class="fab fa-whatsapp"></i> WhatsApp</h4>
+                        <p>0204081704</p>
+                        
+                        <h4><i class="fas fa-envelope"></i> Email</h4>
+                        <p>info@any.com</p>
+                        
+                        <div class="social-icons mt-4">
+                            <h4>Follow Us</h4>
+                            <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-tiktok fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            <!-- Google Map -->
+            <div class="row mt-5">
+                <div class="col-12 fade-in-up">
+                    <div style="height: 300px; background: rgba(255,255,255,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                        <div class="text-center">
+                            <i class="fas fa-map fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                           
+                            <h3>Find Us</h3>
+                        <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+
+        .section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color:white;
+        }
+
+        .map-box {
+            width: 1000px;
+            max-width: 900px;
+            height: 200px;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="section">
+    <h2>EDC OFFICE</h2>
+
+    <div class="map-box">
+        <iframe 
+            src="https://maps.google.com/maps?q=Ecobank%20Head%20Office%20Accra&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-hammer"></i> EDC GHANA Ltd.</h5>
+                    <p>BE A PAN AFRICAN BANK.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                         <li><a href="product.html">Product</a></li>
+                          <li><a href="apply.html">Application</a></li>
+                    </ul>
+                </div>
+                
+              
+                
+                <div class="col-lg-3 mb-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt"></i>Morocco lane 2,Ridge</p>
+                    <p><i class="fas fa-phone"></i> 0204081704</p>
+                    <p><i class="fas fa-envelope"></i> info@EDC.com</p>
+                </div>
+            </div>
+            
+            <hr style="border-color: #34495e;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2026 EDC All rights reserved. | Certified by Ministry of Finance & BOG</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <style>
+        
+        :root {
+            --primary-color: rgb(53, 108, 167) !important;
+            --secondary-color: #f39c12;
+            --accent-color: #e74c3c;
+            --dark-bg: #1a252f;
+            --light-bg: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: rgb(53, 108, 167) !important;;
+        }
+
+        /* Header Styles */
+        .navbar {
+            background: rgb(53, 108, 167) !important;
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--secondary-color) !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-image: url(cytonn-photography-n95VMLxqM2I-unsplash.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            background: var(--secondary-color);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #e67e22;
+            transform: translateY(-2px);
+        }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--dark-bg);
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* About Section */
+        .about-bg {
+            background: var(--light-bg);
+        }
+
+        .stats-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .stats-card h3 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-card img {
+            width: 200px;
+            border-radius: 3px;
+            background: var(--secondary-color);
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 1rem; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            font-weight: 600;
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            display: none;
+            color: #666;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        /* Contact Section */
+        .contact-bg {
+            background: var(--dark-bg);
+            color: white;
+        }
+
+        .contact-info {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info h4 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+       
+
+       
+       
+        .chat-widget:hover {
+            transform: scale(1.1);
+            background: #e67e22;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer h5 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Modal Styles */
+        .modal-content {
+            border-radius: 15px;
+        }
+
+        .modal-header {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .modal-body img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .navbar-collapse {
+                background: rgba(44, 62, 80, 0.95);
+                border-radius: 10px;
+                margin-top: 10px;
+                padding: 1rem;
+            }
+        }
+    
+
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+   <SCRIPT>
+    
+       
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(44, 62, 80, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(44, 62, 80, 0.95)';
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // FAQ toggle function
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                // Close all other FAQs
+                document.querySelectorAll('.faq-answer.show').forEach(openAnswer => {
+                    openAnswer.classList.remove('show');
+                    const openIcon = openAnswer.previousElementSibling.querySelector('i');
+                    openIcon.classList.remove('fa-chevron-up');
+                    openIcon.classList.add('fa-chevron-down');
+                });
+                
+                answer.classList.add('show');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Cookie banner functions
+        function acceptCookies() {
+            document.getElementById('cookieBanner').classList.remove('show');
+        }
+
+        function learnMore() {
+            alert('We use Google Analytics to understand how visitors interact with our website. This helps us improve your experience.');
+        }
+
+        
+
+        // Collapse mobile nav on link click
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
+
+
+   </SCRIPT>
+    </body>
+</html>

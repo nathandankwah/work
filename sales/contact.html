@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <Style>
+        /* --- Global Styles --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fallback to sans-serif if font fails */
+    background-color: #f4f7f6; /* Light gray background for the page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Header Styles --- */
+.header {
+    background-color: #002e4d; /* Dark navy blue from picture */
+    color: white;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+/* --- Form Container Styles --- */
+.form-container {
+    background-color: white;
+    margin: 40px auto; /* Centered with top/bottom margin */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width: 90%;
+    max-width: 700px; /* Limits maximum width on large screens */
+}
+
+/* --- Form Elements Styles --- */
+.form-row {
+    display: flex;
+    gap: 20px; /* Space between side-by-side inputs */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1; /* Inputs take equal width in a row */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex: none; /* Textarea spans full width */
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Common styling for inputs, select, and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 1em;
+    font-family: inherit; /* Use same font as body */
+    transition: border-color 0.3s; /* Smooth focus effect */
+}
+
+/* Change border color on focus */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Blue focus border */
+}
+
+select {
+    appearance: none; /* Modern look for select on all browsers */
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical; /* Allow only vertical resizing */
+}
+
+/* --- Submit Button Styles --- */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 3px 6px rgba(0,123,255,0.2);
+}
+
+/* Hover effect */
+.submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Active click effect */
+.submit-btn:active {
+    transform: translateY(1px); /* Pushes down slightly */
+    box-shadow: none;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+    .header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .form-container {
+        margin: 20px auto;
+        padding: 20px;
+        width: 95%;
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack fields vertically on small screens */
+        gap: 20px;
+    }
+}
+    </Style>
+
+    <div class="header">
+        <h1>Apply For A Banking Service</h1>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="e.g., mail@example.com">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service">
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="savings">Savings Account</option>
+                        <option value="checking">Checking Account</option>
+                        <option value="loan">Personal Loan</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Additional Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter any additional details..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>
